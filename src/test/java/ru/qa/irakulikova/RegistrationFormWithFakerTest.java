@@ -24,7 +24,7 @@ public class RegistrationFormWithFakerTest extends SetUp {
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "Testing Form", url = "https://demoqa.com/automation-practice-form")
     @DisplayName("Заполняем форму регистрации сгенерированными данными")
-    @Tag("test")
+    @Tag("simple_test")
     void successfulRegistrationForm() {
 
         SelenideLogger.addListener("allure", new AllureSelenide());
