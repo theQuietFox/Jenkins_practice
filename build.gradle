@@ -42,16 +42,6 @@ dependencies {
     )
 }
 
-//test {
-//    useJUnitPlatform()
-//}
-//
-//task successfulTest(type: Test) {
-//    useJUnitPlatform {
-//       includeTags("successfulTest")
-//    }
-//}
-
 
 test {
     useJUnitPlatform()
