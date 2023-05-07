@@ -1,7 +1,9 @@
 package ru.qa.irakulikova;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
@@ -16,6 +18,12 @@ public class RegistrationFormWithFakerTest extends SetUp {
     StudentData studentData = FakerDataCreator.getRandomStudent();
 
     @Test
+    @Feature("Форма регистрации студента")
+    @Story("Заполнение формы регистрации")
+    @Owner("ru.qa.irakulikova")
+    @Severity(SeverityLevel.BLOCKER)
+    @Link(value = "Testing Form", url = "https://demoqa.com/automation-practice-form")
+    @DisplayName("Заполняем форму регистрации сгенерированными данными")
     @Tag("successfulTest")
     void successfulRegistrationForm() {
 
