@@ -10,6 +10,7 @@ import utils.SetUp;
 import utils.StudentData;
 
 
+
 public class RegistrationFormWithFakerTest extends SetUp {
     RegistrationPage registrationPage = new RegistrationPage();
     StudentData studentData = FakerDataCreator.getRandomStudent();
